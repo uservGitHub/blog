@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.5.1",
-    "tdtool": "^0.1.15",
+    "tdtool": "^0.1.17",
     "tdtool-less": "^0.1.3",
-    "tdtool-react": "^0.1.6",
+    "tdtool-react": "^0.1.7",
     "ts-loader": "^3.2.0",
     "typescript": "^2.6.2",
     "webpack-node-externals": "^1.6.0"

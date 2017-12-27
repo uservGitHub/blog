@@ -6140,9 +6140,9 @@ tdtool-less@^0.1.3:
     style-loader "^0.17.0"
     webpack "^2.4.1"
 
-tdtool-react@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.npmjs.org/tdtool-react/-/tdtool-react-0.1.6.tgz#fafa2e6142e20d41c9e1a39e10f8a229d20a4611"
+tdtool-react@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.npmjs.org/tdtool-react/-/tdtool-react-0.1.7.tgz#a49e8864859ab505f9c0c9c18e9f7e127bb517e0"
   dependencies:
     babel-eslint "^7.2.3"
     babel-loader "^7.0.0"
@@ -6169,9 +6169,9 @@ tdtool-react@^0.1.6:
     eslint-plugin-standard "^3.0.1"
     template-string-loader "^0.0.3"
 
-tdtool@^0.1.15:
-  version "0.1.15"
-  resolved "https://registry.npmjs.org/tdtool/-/tdtool-0.1.15.tgz#465e279c8242d677348551860583ec554721c1f7"
+tdtool@^0.1.17:
+  version "0.1.17"
+  resolved "https://registry.npmjs.org/tdtool/-/tdtool-0.1.17.tgz#c1dc3061ba6ff0588d6fc3575f764503656766ef"
   dependencies:
     archy "^0.0.2"
     babel-core "^6.24.1"
