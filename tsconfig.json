@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": [
+      "es7"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
