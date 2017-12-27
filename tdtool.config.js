@@ -10,7 +10,7 @@ const root = path.resolve(process.cwd(), 'dist');
 
 const clientConfig = new Config({
   entry: {
-    client: './src/website/index.js'
+    home: './src/website/index.js'
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
@@ -48,12 +48,13 @@ clientConfig.add(
 
 const serverConfig = new Config({
   entry: './src/server/index.ts',
+  dist: './dist/server',
   target: 'node',
-  filename: 'server.js',
+  filename: 'main.js',
   devServer: isDebug,
   minimize: !isDebug,
   sourceMap: true,
-  externals: [/^\.\/website\/assets\.json$/, require('webpack-node-externals')()]
+  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()]
 });
 
 serverConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
@@ -63,5 +64,17 @@ serverConfig.add('rule.ts', {
   loader: 'ts-loader',
   exclude: /node_modules/
 });
+
+serverConfig.add(
+  'plugin.CleanWebpackPlugin',
+  new CleanWebpackPlugin(
+    ['server'],
+    {
+      root,                                  //根目录
+      verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
+      dry:      false        　　　　　　　　　　//启用删除文件
+    }
+  )
+);
 
 module.exports = [clientConfig.resolve(), serverConfig.resolve()];
