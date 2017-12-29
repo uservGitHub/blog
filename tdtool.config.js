@@ -52,7 +52,6 @@ const serverConfig = new Config({
   target: 'node',
   filename: 'main.js',
   devServer: isDebug,
-  minimize: !isDebug,
   sourceMap: true,
   externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()]
 });
@@ -63,6 +62,14 @@ serverConfig.add('rule.ts', {
   test: /\.tsx?$/,
   loader: 'ts-loader',
   exclude: /node_modules/
+});
+
+serverConfig.add('rule.articles', {
+  test: /\.DOCS$/,
+  loader: 'articles-loader',
+  query: {
+    root: path.join(__dirname, 'articles')
+  }
 });
 
 serverConfig.add(
