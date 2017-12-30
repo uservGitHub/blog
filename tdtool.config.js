@@ -8,23 +8,44 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const isDebug = process.env.NODE_ENV !== 'production';
 const root = path.resolve(process.cwd(), 'dist');
 
-const clientConfig = new Config({
+const AssetsPlugin = require('assets-webpack-plugin');
+
+const siteConfig = new Config({
   entry: {
-    home: './src/website/pages/home/index.js'
+    home: './src/site/home.tsx',
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
-  minimize: !isDebug,
-  extends: [['react'], ['less', {
-    extractCss: {
-      filename: isDebug ? '[name].css?[hash]' : '[name].css',
-      allChunks: true
-    },
-    happypack: true
-  }]]
+  minimize: !isDebug
 });
 
-clientConfig.add(
+siteConfig.add('rule.ts', {
+  test: /\.tsx?$/,
+  exclude: /node_modules/,
+  use: [{
+    loader: 'babel-loader',
+    query: {
+      cacheDirectory: true,
+      babelrc: false,
+      presets: [
+        'es2015-ie',
+        'react',
+        'stage-2',
+      ],
+      plugins: [
+        'transform-decorators-legacy',
+        'transform-class-properties',
+        'transform-runtime'
+      ]
+    }
+  }, {
+    loader: 'ts-loader'
+  }]
+});
+
+siteConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
+
+siteConfig.add(
   'plugin.CleanWebpackPlugin',
   new CleanWebpackPlugin(
     ['website'],
@@ -36,8 +57,7 @@ clientConfig.add(
   )
 );
 
-const AssetsPlugin = require('assets-webpack-plugin');
-clientConfig.add(
+siteConfig.add(
   'plugin.AssetsPlugin',
   new AssetsPlugin({
     path: './dist/website',
@@ -46,6 +66,8 @@ clientConfig.add(
   })
 );
 
+
+/* 服务端配置 */
 const serverConfig = new Config({
   entry: './src/server/index.ts',
   dist: './dist/server',
@@ -53,8 +75,7 @@ const serverConfig = new Config({
   filename: 'main.js',
   devServer: isDebug,
   sourceMap: true,
-  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()],
-  extends: ['react', 'less']
+  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()]
 });
 
 serverConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
@@ -85,4 +106,4 @@ serverConfig.add(
   )
 );
 
-module.exports = [clientConfig.resolve(), serverConfig.resolve()];
+module.exports = [siteConfig.resolve(), serverConfig.resolve()];

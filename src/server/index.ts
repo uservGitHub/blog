@@ -8,6 +8,9 @@ import * as Router from 'koa-router';
 import * as Static from 'koa-static';
 import articles from './articles.DOCS';
 import * as R from 'ramda';
+import * as React from 'react';
+import * as ReactDOMServer from 'react-dom/server';
+import Home from '../site/pages/home/index';
 
 const path = require('path');
 
@@ -18,7 +21,8 @@ const app = new Koa();
 const home = new Router();
 
 function renderView(page: any, config: any) {
- return `
+  const html = ReactDOMServer.renderToStaticMarkup(React.createElement(Home));
+  return `
   <!DOCTYPE html>
   <html>
     <head>
@@ -29,7 +33,7 @@ function renderView(page: any, config: any) {
       <script> window.__CONFIG__ = ${JSON.stringify(config)} </script>
     </head>
     <body class="is-loading">
-      <div id="wrapper" class="fade-in overlay"></div>
+      <div id="wrapper" class="fade-in overlay">${html}</div>
       <script src="${assets[page].js}"></script>
     </body>
   </html>

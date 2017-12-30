@@ -8,11 +8,11 @@
     "noImplicitAny": true,
     "target": "es6",
     "lib": [
+      "dom",
       "es7"
     ],
     "inlineSourceMap": true,
-    "allowJs": true,
-    "jsx": "react"
+    "jsx": "preserve"
   },
   "exclude": [
     "node_modules"
