@@ -3,10 +3,10 @@
  */
 import React from 'react';
 
-export default class Wrapper extends React.Component {
+export default class Wrapper extends React.PureComponent {
   render() {
     return [
-      <div key="container" className="container" />,
+      this.props.children,
       <div key="bg" className="bg" />
     ];
   }

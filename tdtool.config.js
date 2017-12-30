@@ -10,7 +10,7 @@ const root = path.resolve(process.cwd(), 'dist');
 
 const clientConfig = new Config({
   entry: {
-    home: './src/website/index.js'
+    home: './src/website/pages/home/index.js'
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
@@ -53,7 +53,8 @@ const serverConfig = new Config({
   filename: 'main.js',
   devServer: isDebug,
   sourceMap: true,
-  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()]
+  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()],
+  extends: ['react', 'less']
 });
 
 serverConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
