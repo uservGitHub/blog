@@ -16,7 +16,12 @@ const siteConfig = new Config({
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
-  minimize: !isDebug
+  minimize: !isDebug,
+  extends: [['less', {
+    extractCss: {
+      filename: '[name].css?[hash]'
+    }
+  }]]
 });
 
 siteConfig.add('rule.ts', {
@@ -43,20 +48,6 @@ siteConfig.add('rule.ts', {
   }]
 });
 
-siteConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
-
-siteConfig.add(
-  'plugin.CleanWebpackPlugin',
-  new CleanWebpackPlugin(
-    ['website'],
-    {
-      root,                                  //根目录
-      verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
-      dry:      false        　　　　　　　　　　//启用删除文件
-    }
-  )
-);
-
 siteConfig.add(
   'plugin.AssetsPlugin',
   new AssetsPlugin({
@@ -66,7 +57,6 @@ siteConfig.add(
   })
 );
 
-
 /* 服务端配置 */
 const serverConfig = new Config({
   entry: './src/server/index.ts',
@@ -75,10 +65,11 @@ const serverConfig = new Config({
   filename: 'main.js',
   devServer: isDebug,
   sourceMap: true,
-  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()]
+  externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()],
+  extends: [['less', {
+    target: 'node'
+  }]]
 });
-
-serverConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
 
 serverConfig.add('rule.ts', {
   test: /\.tsx?$/,
@@ -86,24 +77,29 @@ serverConfig.add('rule.ts', {
   exclude: /node_modules/
 });
 
-serverConfig.add('rule.articles', {
-  test: /\.DOCS$/,
-  loader: 'articles-loader',
-  query: {
-    root: path.join(__dirname, 'articles')
-  }
-});
-
-serverConfig.add(
-  'plugin.CleanWebpackPlugin',
-  new CleanWebpackPlugin(
-    ['server'],
-    {
-      root,                                  //根目录
-      verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
-      dry:      false        　　　　　　　　　　//启用删除文件
+function loadCommon(config, key) {
+  config.add('resolve.extensions', [".tsx", ".ts", ".js"]);
+  config.add(
+    'plugin.CleanWebpackPlugin',
+    new CleanWebpackPlugin(
+      [key],
+      {
+        root,                                  //根目录
+        verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
+        dry:      false        　　　　　　　　　　//启用删除文件
+      }
+    )
+  );
+  config.add('rule.articles', {
+    test: /\.DOCS$/,
+    loader: 'articles-loader',
+    query: {
+      root: path.join(__dirname, 'articles')
     }
-  )
-);
+  });
+}
+
+loadCommon(siteConfig, 'website');
+loadCommon(serverConfig, 'server');
 
 module.exports = [siteConfig.resolve(), serverConfig.resolve()];

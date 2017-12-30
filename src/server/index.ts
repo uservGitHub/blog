@@ -6,7 +6,7 @@ import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
 import * as Router from 'koa-router';
 import * as Static from 'koa-static';
-import articles from './articles.DOCS';
+import articles from '../articles.DOCS';
 import * as R from 'ramda';
 import * as React from 'react';
 import * as ReactDOMServer from 'react-dom/server';
@@ -21,19 +21,18 @@ const app = new Koa();
 const home = new Router();
 
 function renderView(page: any, config: any) {
-  const html = ReactDOMServer.renderToStaticMarkup(React.createElement(Home));
   return `
   <!DOCTYPE html>
   <html>
     <head>
-      <title>hihl_妖风</title>
+      <title>hihl</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <link rel="stylesheet" href="${assets[page].css}">
-      <script> window.__CONFIG__ = ${JSON.stringify(config)} </script>
+      <script> window.__CONFIG__ = ${JSON.stringify({ articles: config.ats })} </script>
     </head>
     <body class="is-loading">
-      <div id="wrapper" class="fade-in overlay">${html}</div>
+      <div id="wrapper" class="fade-in overlay">${config.html}</div>
       <script src="${assets[page].js}"></script>
     </body>
   </html>
@@ -43,12 +42,10 @@ function renderView(page: any, config: any) {
 home.get('/', async ( ctx ) => {
   const current = ctx.query.page || 1;
   const offset = (current - 1) * pageSize;
+  const ats = R.slice(offset, offset + pageSize)(articles.mdsArray);
   ctx.body = renderView('home', {
-    categories: articles.categories,
-    tags: articles.tags,
-    total: articles.mdsArray.length,
-    pageSize,
-    articles: R.slice(offset, offset + pageSize)(articles.mdsArray)
+    ats,
+    html: ReactDOMServer.renderToStaticMarkup(React.createElement(Home, { articles: ats }))
   });
 });
 
