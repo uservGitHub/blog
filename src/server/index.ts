@@ -29,7 +29,7 @@ function renderView(page: any, config: any) {
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <link rel="stylesheet" href="${assets[page].css}">
-      <script> window.__CONFIG__ = ${JSON.stringify({ articles: config.ats })} </script>
+      <script> window.__CONFIG__ = ${JSON.stringify({ pagination: config.pagination })} </script>
     </head>
     <body class="is-loading">
       <div id="wrapper" class="fade-in overlay">${config.html}</div>
@@ -43,9 +43,15 @@ home.get('/', async ( ctx ) => {
   const current = ctx.query.page || 1;
   const offset = (current - 1) * pageSize;
   const ats = R.slice(offset, offset + pageSize)(articles.mdsArray);
+  const total = articles.mdsArray.length;
+  const pagination = {
+    current,
+    total,
+    articles: ats
+  };
   ctx.body = renderView('home', {
-    ats,
-    html: ReactDOMServer.renderToStaticMarkup(React.createElement(Home, { articles: ats }))
+    pagination,
+    html: ReactDOMServer.renderToStaticMarkup(React.createElement(Home, { pagination }))
   });
 });
 
