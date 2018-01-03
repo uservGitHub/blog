@@ -13,6 +13,7 @@ const AssetsPlugin = require('assets-webpack-plugin');
 const siteConfig = new Config({
   entry: {
     home: './src/site/home.tsx',
+    articles: './src/site/articles.tsx',
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
@@ -108,7 +109,16 @@ function loadCommon(config, key) {
         name: 'fonts/[name].[ext]'
       }
     }]
-  })
+  });
+
+  config.add('rule.IMAGE', {
+    test: /\.(png|jpg|jpeg|gif)?$/i,
+    loader: 'url-loader',
+    query: {
+      limit: 10000,
+      name: '[name]-[hash:5].[ext]'
+    }
+  });
 }
 
 loadCommon(siteConfig, 'website');

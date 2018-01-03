@@ -10,7 +10,7 @@ class Preview extends React.PureComponent<{ article: any }, any> {
     return (
       <Fragment>
         <div className="article-preview">
-          <a href={key.substr(key.indexOf('/articles'))}>
+          <a href={`/articles${key}`}>
             <h2 className="article-preview-title">{title}</h2>
             <p className="article-preview-meta">
               <i className="glyphicon glyphicon-calendar"/>
@@ -28,7 +28,7 @@ class Preview extends React.PureComponent<{ article: any }, any> {
   }
 }
 
-export default class HomePage extends React.Component<{ pagination: any }, any> {
+export default class HomePage extends React.PureComponent<{ pagination: any }, any> {
   constructor(props: any) {
     super(props);
     const { pagination } = props;
@@ -60,21 +60,31 @@ export default class HomePage extends React.Component<{ pagination: any }, any> 
     const { idxs, current, articles } = this.state;
     return (
       <Layout>
-        {
-          articles.map((article:any) => <Preview key={article.key} article={article}/>)
-        }
-        <div style={{ textAlign: 'center' }}>
-          <ul className="pagination">
-            <li className={`${current == idxs[0] ? 'disabled' : ''}`}><a>&larr;</a></li>
-            {
-              idxs.map((i:any) => (
-                <li key={i} className={`${current == i ? 'active' : ''}`}>
-                  <a>{i}</a>
-                </li>
-              ))
-            }
-            <li className={`${current == idxs[idxs.length - 1] ? 'disabled' : ''}`}><a>&rarr;</a></li>
-          </ul>
+        <div className="container" style={{ paddingTop: 90 }}>
+          <div className="row">
+            <div className="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+              {
+                articles.map((article:any) => <Preview key={article.key} article={article}/>)
+              }
+              <div style={{ textAlign: 'center' }}>
+                <ul className="pagination">
+                  <li className={`${current == idxs[0] ? 'disabled' : ''}`}>
+                    <a href={current == idxs[0] ? '' : `/?page=${current - 1}`}>&larr;</a>
+                  </li>
+                  {
+                    idxs.map((i:any) => (
+                      <li key={i} className={`${current == i ? 'active' : ''}`}>
+                        <a href={current == i ? '' : `/?page=${i}`}>{i}</a>
+                      </li>
+                    ))
+                  }
+                  <li className={`${current == idxs[idxs.length - 1] ? 'disabled' : ''}`}>
+                    <a href={current == idxs[idxs.length - 1] ? '' : `/?page=${current + 1}`}>&rarr;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </Layout>
     );
