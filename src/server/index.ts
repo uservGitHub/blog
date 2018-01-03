@@ -25,7 +25,7 @@ function renderView(page: any, config: any) {
   <!DOCTYPE html>
   <html>
     <head>
-      <title>hihl</title>
+      <title>hihl|遥风</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <link rel="stylesheet" href="${assets[page].css}">

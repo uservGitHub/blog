@@ -17,6 +17,7 @@ const siteConfig = new Config({
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
   minimize: !isDebug,
+  sourceMap: isDebug,
   extends: [['less', {
     extractCss: {
       filename: '[name].css?[hash]'
@@ -97,6 +98,17 @@ function loadCommon(config, key) {
       root: path.join(__dirname, 'articles')
     }
   });
+
+  config.add('rule.glyphicons', {
+    test: /glyphicons-halflings-regular\.(woff|woff2|ttf|eot|svg)($|\?)/,
+    use: [{
+      loader: 'url-loader',
+      options: {
+        limit: 10000,
+        name: 'fonts/[name].[ext]'
+      }
+    }]
+  })
 }
 
 loadCommon(siteConfig, 'website');

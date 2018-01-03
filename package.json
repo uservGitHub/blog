@@ -27,12 +27,14 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
+    "bootstrap": "3",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.3.0",
     "koa-static": "^4.0.2",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-markdown": "^3.1.4"
   }
 }
