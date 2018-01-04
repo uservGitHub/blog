@@ -8,7 +8,7 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
     const { title, date, content, category, tags, summary } = this.props.article;
     return (
       <Layout>
-        <header className="article-header" style={{ backgroundImage: `url(${require('./article-bg.jpg')})` }}>
+        <header className="article-header" style={{ backgroundImage: `url(${require('../article-bg.jpg')})` }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
@@ -21,7 +21,7 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
                   <div style={{ marginTop: 20, textAlign: 'center' }}>
                     {
                       tags.map((tag:string) => (
-                        <a className="tag" key={tag} href={`/tags/#/${tag}`}>{tag}</a>
+                        <a className="tag" key={tag} href={`/tags/#${tag}`}>{tag}</a>
                       ))
                     }
                   </div>

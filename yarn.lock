@@ -330,9 +330,9 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-articles-loader@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/articles-loader/-/articles-loader-1.0.3.tgz#afa514112e0b96a89e99aacf4b65756b6c69d2fd"
+articles-loader@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/articles-loader/-/articles-loader-1.0.5.tgz#4bdc3ac58acf5347bf9a2c93951cafb04aa49530"
   dependencies:
     ramda "^0.25.0"
     yaml-front-matter "^3.4.0"
