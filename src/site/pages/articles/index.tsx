@@ -5,7 +5,7 @@ import Layout from '../../layout/index';
 
 export default class ArticlePage extends React.PureComponent<{ article: any }, any> {
   render() {
-    const { title, date, content, category, tags } = this.props.article;
+    const { title, date, content, category, tags, summary } = this.props.article;
     return (
       <Layout>
         <header className="article-header" style={{ backgroundImage: `url(${require('./article-bg.jpg')})` }}>
@@ -34,7 +34,14 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <ReactMarkdown source={content} />
+                <div className="summary">
+                  {summary}
+                </div>
+                <ReactMarkdown
+                  className="react-markdown"
+                  source={content}
+                  escapeHtml={false}
+                />
               </div>
             </div>
           </div>

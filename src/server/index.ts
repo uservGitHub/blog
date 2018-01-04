@@ -80,6 +80,7 @@ router.use('/articles', articlesRouter.routes(), articlesRouter.allowedMethods()
 
 app.use(bodyParser())
    .use(Static(path.join(__dirname, '../website')))
+   .use(Static(path.join(process.cwd(), 'public')))
    .use(router.routes())
    .use(router.allowedMethods()); // 加载路由中间件
 
