@@ -1,5 +1,5 @@
 ---
-title: 使用 React + Koa2 + markdown 从零搭建博客（一）
+title: 使用 React + Koa2 + Markdown 从零搭建博客（一）
 tags: 
   - react
   - koa2
@@ -7,7 +7,7 @@ tags:
   - webpack
 category: 前端
 summary: >
-  使用react + koa2 + markdown + webpack + typescript 从零手撸个人博客，本篇首先介绍如何使用
+  使用react + koa2 + Markdown + webpack + typescript 从零手撸个人博客，本篇首先介绍如何使用
   tdtool(自己基于webpack2的一个简单封装)搭建koa2 + typescript + react的同构工程。
 ---
 
@@ -250,4 +250,4 @@ renderView.ts
 }
 ```
 `articles.DOCS`即是通过articles-loader收集的md文章信息。
-<br/>收集上来的信息包含哪些？请见[使用 React + Koa2 + markdown 从零搭建博客（二）](/articles/2018/1/6/setupblog2.md)
+<br/>收集上来的信息包含哪些？请见[使用 React + Koa2 + Markdown 从零搭建博客（二）](/articles/2018/1/6/setupblog2.md)

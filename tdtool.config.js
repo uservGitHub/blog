@@ -103,16 +103,16 @@ function loadCommon(config, key) {
     }
   });
 
-  config.add('rule.glyphicons', {
-    test: /glyphicons-halflings-regular\.(woff|woff2|ttf|eot|svg)($|\?)/,
-    use: [{
-      loader: 'url-loader',
-      options: {
-        limit: 10000,
-        name: 'fonts/[name].[ext]'
-      }
-    }]
-  });
+  // config.add('rule.glyphicons', {
+  //   test: /glyphicons-halflings-regular\.(woff|woff2|ttf|eot|svg)($|\?)/,
+  //   use: [{
+  //     loader: 'url-loader',
+  //     options: {
+  //       limit: 10000,
+  //       name: 'fonts/[name].[ext]'
+  //     }
+  //   }]
+  // });
 
   config.add('rule.IMAGE', {
     test: /\.(png|jpg|jpeg|gif)?$/i,

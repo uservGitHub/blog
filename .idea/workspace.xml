@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d2afed4-023f-44c4-bb50-c7bc2358e692" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/site/layout/Footer/index.tsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/site/layout/Footer/style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/site/layout/mixin.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" afterPath="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/layout/Nav/style.less" afterPath="$PROJECT_DIR$/src/site/layout/Nav/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/layout/index.tsx" afterPath="$PROJECT_DIR$/src/site/layout/index.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/pages/articles/index.tsx" afterPath="$PROJECT_DIR$/src/site/pages/articles/index.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/2018/1/6/setupblog2.md" afterPath="$PROJECT_DIR$/articles/2018/1/6/setupblog2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/renderView.ts" afterPath="$PROJECT_DIR$/src/server/renderView.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/layout/Footer/index.tsx" afterPath="$PROJECT_DIR$/src/site/layout/Footer/index.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/layout/Footer/style.less" afterPath="$PROJECT_DIR$/src/site/layout/Footer/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/pages/tags/index.tsx" afterPath="$PROJECT_DIR$/src/site/pages/tags/index.tsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/style.less" afterPath="$PROJECT_DIR$/src/site/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdtool.config.js" afterPath="$PROJECT_DIR$/tdtool.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,22 +24,101 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="articles.DOCS" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/articles.DOCS">
+      <file leaf-file-name="tdtool.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tdtool.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/pages/articles/index.tsx">
+        <entry file="file://$PROJECT_DIR$/src/site/pages/tags/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+            <state relative-caret-position="224">
+              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renderView.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/renderView.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setupblog1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/articles/2018/1/1/setupblog1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="143">
+                <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <folding>
+                  <marker date="1515411400000" expanded="false" signature="749:1118" ph="{&quot;dist&quot;: './dist/website'...}" />
+                  <marker date="1515411400000" expanded="true" signature="760:839" ph="{&quot;home&quot;: './src/site/home.tsx'...}" />
+                  <marker date="1515411400000" expanded="true" signature="985:1116" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="986:1115" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="995:1114" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="1067:1110" ph="{&quot;filename&quot;: '[name].css?[hash]'...}" />
+                  <marker date="1515411400000" expanded="false" signature="1148:1576" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="1226:1574" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="1227:1542" ph="{&quot;loader&quot;: 'babel-loader'...}" />
+                  <marker date="1515411400000" expanded="true" signature="1268:1538" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="1335:1401" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="1418:1532" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="1544:1573" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+                  <marker date="1515411400000" expanded="false" signature="1686:1771" ph="{&quot;path&quot;: './dist/website'...}" />
+                  <marker date="1515411400000" expanded="true" signature="1777:1788" ph="/*...*/" />
+                  <marker date="1515411400000" expanded="false" signature="1821:2154" ph="{&quot;entry&quot;: './src/server/index.ts'...}" />
+                  <marker date="1515411400000" expanded="true" signature="2116:2152" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="2117:2151" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="2126:2150" ph="{&quot;target&quot;: 'node'...}" />
+                  <marker date="1515411400000" expanded="false" signature="2186:2291" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+                  <marker date="1515411400000" expanded="false" signature="2328:3356" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="2484:2650" ph="{&quot;root&quot;: root...}" />
+                  <marker date="1515411400000" expanded="true" signature="2664:2736" ph="//..." />
+                  <marker date="1515411400000" expanded="true" signature="2767:2889" ph="{&quot;loader&quot;: 'articles-loader'...}" />
+                  <marker date="1515411400000" expanded="true" signature="2833:2885" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="2954:3162" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="3039:3158" ph="[...]" />
+                  <marker date="1515411400000" expanded="true" signature="3040:3157" ph="{&quot;loader&quot;: 'url-loader'...}" />
+                  <marker date="1515411400000" expanded="true" signature="3085:3151" ph="{&quot;name&quot;: 'fonts/[name].[ext]'...}" />
+                  <marker date="1515411400000" expanded="true" signature="3209:3352" ph="{&quot;loader&quot;: 'url-loader'...}" />
+                  <marker date="1515411400000" expanded="true" signature="3285:3348" ph="{&quot;name&quot;: '[name]-[hash:5].[ext]'...}" />
+                  <marker date="1515411400000" expanded="true" signature="3565:3704" ph="..." />
+                  <marker date="1515411400000" expanded="true" signature="3993:4267" ph="..." />
+                  <marker date="1515411400000" expanded="true" signature="4350:4761" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="4566:4613" ph="{&quot;current&quot;: current...}" />
+                  <marker date="1515411400000" expanded="true" signature="4647:4757" ph="{&quot;pagination&quot;: pagination...}" />
+                  <marker date="1515411400000" expanded="true" signature="5056:5611" ph="{...}" />
+                  <marker date="1515411400000" expanded="true" signature="5072:5172" ph="{&quot;js&quot;: &quot;/articles.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515411400000" expanded="true" signature="5184:5276" ph="{&quot;js&quot;: &quot;/tags.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515411400000" expanded="true" signature="5294:5398" ph="{&quot;js&quot;: &quot;/categories.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515411400000" expanded="true" signature="5410:5502" ph="{&quot;js&quot;: &quot;/home.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515411400000" expanded="true" signature="5515:5609" ph="{&quot;js&quot;: &quot;/about.40099d3476b9654d29e2.js&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setupblog2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/articles/2018/1/6/setupblog2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="285">
+                <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -49,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/site/layout/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -60,8 +138,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/site/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="133">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,8 +148,8 @@
       <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/site/layout/Footer/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="97" />
+            <state relative-caret-position="56">
+              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -83,29 +161,17 @@
         <entry file="file://$PROJECT_DIR$/src/site/layout/Nav/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/layout/Nav/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/site/layout/Footer/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="199">
+              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -131,7 +197,11 @@
       <find>articles</find>
       <find>170</find>
       <find>types</find>
+      <find>glyphicons</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/site</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,7 +219,6 @@
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/site/configs.ts" />
         <option value="$PROJECT_DIR$/src/site/home.tsx" />
-        <option value="$PROJECT_DIR$/articles/2018/1/6/setupblog2.md" />
         <option value="$PROJECT_DIR$/src/site/pages/home/style.less" />
         <option value="$PROJECT_DIR$/src/site/articles.tsx" />
         <option value="$PROJECT_DIR$/src/site/pages/home/index.tsx" />
@@ -165,31 +234,32 @@
         <option value="$PROJECT_DIR$/src/server/routers/categories.ts" />
         <option value="$PROJECT_DIR$/src/site/tags.tsx" />
         <option value="$PROJECT_DIR$/src/site/categories.tsx" />
-        <option value="$PROJECT_DIR$/src/site/pages/tags/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/pages/about/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/about.tsx" />
-        <option value="$PROJECT_DIR$/tdtool.config.js" />
         <option value="$PROJECT_DIR$/src/server/routers/about.ts" />
         <option value="$PROJECT_DIR$/src/server/index.ts" />
         <option value="$PROJECT_DIR$/src/site/pages/about/style.less" />
         <option value="$PROJECT_DIR$/src/site/layout/Nav/index.tsx" />
         <option value="$PROJECT_DIR$/public/highlight.min.js" />
         <option value="$PROJECT_DIR$/public/highlight/9.12.0/github.min.css" />
-        <option value="$PROJECT_DIR$/src/server/renderView.ts" />
         <option value="$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx" />
         <option value="$PROJECT_DIR$/typings/index.d.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pm2.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" />
         <option value="$PROJECT_DIR$/src/articles.DOCS" />
         <option value="$PROJECT_DIR$/src/site/pages/articles/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/layout/mixin.less" />
         <option value="$PROJECT_DIR$/src/site/layout/Nav/style.less" />
         <option value="$PROJECT_DIR$/src/site/layout/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/style.less" />
+        <option value="$PROJECT_DIR$/tdtool.config.js" />
+        <option value="$PROJECT_DIR$/src/server/renderView.ts" />
+        <option value="$PROJECT_DIR$/src/site/pages/tags/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/layout/Footer/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/layout/Footer/style.less" />
+        <option value="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" />
+        <option value="$PROJECT_DIR$/articles/2018/1/6/setupblog2.md" />
       </list>
     </option>
   </component>
@@ -291,7 +361,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,10 +410,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nav" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,6 +490,98 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4.7.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4.7.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2018" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2018" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,12 +764,12 @@
       <workItem from="1514898995377" duration="77000" />
       <workItem from="1514899108863" duration="11000" />
       <workItem from="1514899139080" duration="26550000" />
-      <workItem from="1515042272295" duration="25941000" />
+      <workItem from="1515042272295" duration="27769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111698000" />
+    <option name="totallyTimeSpent" value="113526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -594,6 +778,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -607,7 +792,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -654,17 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/articles/2018/1/6/setupblog2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -766,30 +939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/pages/tags/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/site/pages/about/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="716">
           <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/articles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="false" />
           </folding>
@@ -874,14 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdtool.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -911,7 +1056,7 @@
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -929,7 +1074,7 @@
         <state relative-caret-position="418">
           <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -955,82 +1100,15 @@
         <state relative-caret-position="2">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#51#78#0" expanded="true" />
+            <element signature="e#51#78#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/renderView.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/articles/2018/1/1/setupblog1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="318">
-            <caret line="252" column="4" lean-forward="false" selection-start-line="252" selection-start-column="4" selection-end-line="252" selection-end-column="4" />
-            <folding>
-              <marker date="1515402478000" expanded="false" signature="749:1118" ph="{&quot;dist&quot;: './dist/website'...}" />
-              <marker date="1515402478000" expanded="true" signature="760:839" ph="{&quot;home&quot;: './src/site/home.tsx'...}" />
-              <marker date="1515402478000" expanded="true" signature="985:1116" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="986:1115" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="995:1114" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="1067:1110" ph="{&quot;filename&quot;: '[name].css?[hash]'...}" />
-              <marker date="1515402478000" expanded="false" signature="1148:1576" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="1226:1574" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="1227:1542" ph="{&quot;loader&quot;: 'babel-loader'...}" />
-              <marker date="1515402478000" expanded="true" signature="1268:1538" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="1335:1401" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="1418:1532" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="1544:1573" ph="{&quot;loader&quot;: 'ts-loader'...}" />
-              <marker date="1515402478000" expanded="false" signature="1686:1771" ph="{&quot;path&quot;: './dist/website'...}" />
-              <marker date="1515402478000" expanded="true" signature="1777:1788" ph="/*...*/" />
-              <marker date="1515402478000" expanded="false" signature="1821:2154" ph="{&quot;entry&quot;: './src/server/index.ts'...}" />
-              <marker date="1515402478000" expanded="true" signature="2116:2152" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="2117:2151" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="2126:2150" ph="{&quot;target&quot;: 'node'...}" />
-              <marker date="1515402478000" expanded="false" signature="2186:2291" ph="{&quot;loader&quot;: 'ts-loader'...}" />
-              <marker date="1515402478000" expanded="false" signature="2328:3356" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="2484:2650" ph="{&quot;root&quot;: root...}" />
-              <marker date="1515402478000" expanded="true" signature="2664:2736" ph="//..." />
-              <marker date="1515402478000" expanded="true" signature="2767:2889" ph="{&quot;loader&quot;: 'articles-loader'...}" />
-              <marker date="1515402478000" expanded="true" signature="2833:2885" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="2954:3162" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="3039:3158" ph="[...]" />
-              <marker date="1515402478000" expanded="true" signature="3040:3157" ph="{&quot;loader&quot;: 'url-loader'...}" />
-              <marker date="1515402478000" expanded="true" signature="3085:3151" ph="{&quot;name&quot;: 'fonts/[name].[ext]'...}" />
-              <marker date="1515402478000" expanded="true" signature="3209:3352" ph="{&quot;loader&quot;: 'url-loader'...}" />
-              <marker date="1515402478000" expanded="true" signature="3285:3348" ph="{&quot;name&quot;: '[name]-[hash:5].[ext]'...}" />
-              <marker date="1515402478000" expanded="true" signature="3565:3704" ph="..." />
-              <marker date="1515402478000" expanded="true" signature="3993:4267" ph="..." />
-              <marker date="1515402478000" expanded="true" signature="4350:4761" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="4566:4613" ph="{&quot;current&quot;: current...}" />
-              <marker date="1515402478000" expanded="true" signature="4647:4757" ph="{&quot;pagination&quot;: pagination...}" />
-              <marker date="1515402478000" expanded="true" signature="5056:5611" ph="{...}" />
-              <marker date="1515402478000" expanded="true" signature="5072:5172" ph="{&quot;js&quot;: &quot;/articles.40099d3476b9654d29e2.js&quot;...}" />
-              <marker date="1515402478000" expanded="true" signature="5184:5276" ph="{&quot;js&quot;: &quot;/tags.40099d3476b9654d29e2.js&quot;...}" />
-              <marker date="1515402478000" expanded="true" signature="5294:5398" ph="{&quot;js&quot;: &quot;/categories.40099d3476b9654d29e2.js&quot;...}" />
-              <marker date="1515402478000" expanded="true" signature="5410:5502" ph="{&quot;js&quot;: &quot;/home.40099d3476b9654d29e2.js&quot;...}" />
-              <marker date="1515402478000" expanded="true" signature="5515:5609" ph="{&quot;js&quot;: &quot;/about.40099d3476b9654d29e2.js&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/articles.DOCS">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1038,7 +1116,7 @@
     <entry file="file://$PROJECT_DIR$/src/site/pages/articles/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1046,7 +1124,7 @@
     <entry file="file://$PROJECT_DIR$/src/site/layout/Nav/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -1064,7 +1142,7 @@
     <entry file="file://$PROJECT_DIR$/src/site/layout/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -1090,23 +1168,55 @@
     <entry file="file://$PROJECT_DIR$/src/site/layout/Nav/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/site/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/renderView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/articles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdtool.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/pages/tags/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/site/layout/Footer/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="97" />
+        <state relative-caret-position="56">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -1115,9 +1225,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/site/layout/Footer/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="199">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/2018/1/1/setupblog1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="143">
+            <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding>
+              <marker date="1515411400000" expanded="false" signature="749:1118" ph="{&quot;dist&quot;: './dist/website'...}" />
+              <marker date="1515411400000" expanded="true" signature="760:839" ph="{&quot;home&quot;: './src/site/home.tsx'...}" />
+              <marker date="1515411400000" expanded="true" signature="985:1116" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="986:1115" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="995:1114" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="1067:1110" ph="{&quot;filename&quot;: '[name].css?[hash]'...}" />
+              <marker date="1515411400000" expanded="false" signature="1148:1576" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="1226:1574" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="1227:1542" ph="{&quot;loader&quot;: 'babel-loader'...}" />
+              <marker date="1515411400000" expanded="true" signature="1268:1538" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="1335:1401" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="1418:1532" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="1544:1573" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+              <marker date="1515411400000" expanded="false" signature="1686:1771" ph="{&quot;path&quot;: './dist/website'...}" />
+              <marker date="1515411400000" expanded="true" signature="1777:1788" ph="/*...*/" />
+              <marker date="1515411400000" expanded="false" signature="1821:2154" ph="{&quot;entry&quot;: './src/server/index.ts'...}" />
+              <marker date="1515411400000" expanded="true" signature="2116:2152" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="2117:2151" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="2126:2150" ph="{&quot;target&quot;: 'node'...}" />
+              <marker date="1515411400000" expanded="false" signature="2186:2291" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+              <marker date="1515411400000" expanded="false" signature="2328:3356" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="2484:2650" ph="{&quot;root&quot;: root...}" />
+              <marker date="1515411400000" expanded="true" signature="2664:2736" ph="//..." />
+              <marker date="1515411400000" expanded="true" signature="2767:2889" ph="{&quot;loader&quot;: 'articles-loader'...}" />
+              <marker date="1515411400000" expanded="true" signature="2833:2885" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="2954:3162" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="3039:3158" ph="[...]" />
+              <marker date="1515411400000" expanded="true" signature="3040:3157" ph="{&quot;loader&quot;: 'url-loader'...}" />
+              <marker date="1515411400000" expanded="true" signature="3085:3151" ph="{&quot;name&quot;: 'fonts/[name].[ext]'...}" />
+              <marker date="1515411400000" expanded="true" signature="3209:3352" ph="{&quot;loader&quot;: 'url-loader'...}" />
+              <marker date="1515411400000" expanded="true" signature="3285:3348" ph="{&quot;name&quot;: '[name]-[hash:5].[ext]'...}" />
+              <marker date="1515411400000" expanded="true" signature="3565:3704" ph="..." />
+              <marker date="1515411400000" expanded="true" signature="3993:4267" ph="..." />
+              <marker date="1515411400000" expanded="true" signature="4350:4761" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="4566:4613" ph="{&quot;current&quot;: current...}" />
+              <marker date="1515411400000" expanded="true" signature="4647:4757" ph="{&quot;pagination&quot;: pagination...}" />
+              <marker date="1515411400000" expanded="true" signature="5056:5611" ph="{...}" />
+              <marker date="1515411400000" expanded="true" signature="5072:5172" ph="{&quot;js&quot;: &quot;/articles.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515411400000" expanded="true" signature="5184:5276" ph="{&quot;js&quot;: &quot;/tags.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515411400000" expanded="true" signature="5294:5398" ph="{&quot;js&quot;: &quot;/categories.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515411400000" expanded="true" signature="5410:5502" ph="{&quot;js&quot;: &quot;/home.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515411400000" expanded="true" signature="5515:5609" ph="{&quot;js&quot;: &quot;/about.40099d3476b9654d29e2.js&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/2018/1/6/setupblog2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="285">
+            <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

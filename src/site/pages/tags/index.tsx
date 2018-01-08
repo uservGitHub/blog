@@ -31,7 +31,7 @@ export default class Tags extends React.PureComponent<{ tags: any, title: string
               {
                 Object.keys(tags).map((tag:string) => (
                   <div key={tag} className="article-list" id={tag}>
-                    <span className="glyphicon glyphicon-list listing-seperator">
+                    <span className="fa fa-tag listing-seperator">
                       <span className="tag-text">{tag}</span>
                     </span>
                     {

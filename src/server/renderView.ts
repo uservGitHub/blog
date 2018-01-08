@@ -9,6 +9,7 @@ export default function renderView(page: string, config: any) {
       <title>hihl</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
       ${page === 'articles' ? '<link rel="stylesheet" href="/highlight/9.12.0/monokai.min.css">' : ''}
       <link rel="stylesheet" href="${assets[page].css}">
       <script> window.__CONFIG__ = ${JSON.stringify(others)} </script>
