@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
 import './style.less';
 import Layout from '../../layout/index';
+import CodeBlock from "./CodeBlock";
 
 export default class ArticlePage extends React.PureComponent<{ article: any }, any> {
   render() {
@@ -41,6 +42,7 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
                   className="react-markdown"
                   source={content}
                   escapeHtml={false}
+                  renderers={{ code: CodeBlock }}
                 />
               </div>
             </div>

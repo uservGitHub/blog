@@ -9,6 +9,8 @@ import home from './routers/home';
 import articles from './routers/articles';
 import tags from './routers/tags';
 import categories from './routers/categories';
+import about from './routers/about';
+
 const path = require('path');
 
 const app = new Koa();
@@ -18,6 +20,7 @@ const router = new Router();
 router.use('/', home.routes(), home.allowedMethods());
 router.use('/articles', articles.routes(), articles.allowedMethods());
 router.use('/tags', tags.routes(), tags.allowedMethods());
+router.use('/about', about.routes(), about.allowedMethods());
 router.use('/categories', categories.routes(), categories.allowedMethods());
 
 app.use(bodyParser())

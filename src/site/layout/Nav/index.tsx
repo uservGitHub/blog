@@ -21,7 +21,7 @@ export default class Nav extends React.Component<any, any> {
               <span className="icon-bar"/>
             </button>
             <a className="navbar-header-brand" href="/">
-              <span>hihl|亦文</span>
+              <span>hihl</span>
               的博客
             </a>
           </div>
