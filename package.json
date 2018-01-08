@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "tdtool start",
-    "release": "export NODE_ENV=production && tdtool build"
+    "release": "export NODE_ENV=production && tdtool build",
+    "start": "pm2 start pm2.json",
+    "stop": "pm2 delete pm2.json"
   },
   "devDependencies": {
     "@types/koa": "^2.0.43",
