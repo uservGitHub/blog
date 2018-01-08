@@ -34,7 +34,7 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
         <article>
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+              <div className="col-lg-10 col-lg-offset-1 col-sm-12 post-container">
                 <div className="summary">
                   {summary}
                 </div>

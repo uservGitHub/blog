@@ -153,3 +153,101 @@ loadCommon(serverConfig, 'server');
 
 module.exports = [siteConfig.resolve(), serverConfig.resolve()];
 ```
+## 同构
+
+本次没有使用React-Router
+
+#### 客户端
+
+以主页home为例
+
+入口文件
+```js
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import HomePage from './pages/home/index';
+import configs from './configs';
+
+ReactDOM.render(
+  <HomePage pagination={configs.pagination}/>,
+  document.getElementById('wrapper')
+);
+```
+HomePage是页面实现代码
+`configs`是初始化数据，挂在`window.__CONFIG__`下的，由服务端注入
+
+config.ts代码如下
+```js
+export default (<any>window).__CONFIG__;
+```
+#### 服务端
+
+home路由代码示例
+
+router/home.ts
+```js
+import * as Router from 'koa-router';
+import articles from '../../articles.DOCS';
+import * as R from 'ramda';
+import * as React from 'react';
+import * as ReactDOMServer from 'react-dom/server';
+import Home from '../../site/pages/home/index';
+import renderView from '../renderView';
+
+const pageSize = 10;
+
+const home = new Router();
+
+home.get('/', async ( ctx ) => {
+  const current = ctx.query.page || 1;
+  const offset = (current - 1) * pageSize;
+  const ats = R.slice(offset, offset + pageSize)(articles.mdsArray);
+  const total = articles.mdsArray.length;
+  const pagination = {
+    current,
+    total,
+    articles: ats
+  };
+  ctx.body = renderView('home', {
+    pagination,
+    html: ReactDOMServer.renderToStaticMarkup(React.createElement(Home, { pagination }))
+  });
+});
+
+export default home;
+
+```
+`pagination`对象即为前后端同构所需数据，服务端通过React.createElement(Home, { pagination })直接传递给组件，
+客户端通过下面的方式注入
+
+renderView.ts
+<img src="/images/2018-1-1-setupblog2.jpg"/>
+
+其中`others`对应home.ts中的`pagination`，从上述代码可以看出该值注入到`window.__CONFIG__`中供前端使用
+`assets`就是前端编译输出的文件映射关系，如下：
+```json
+{
+  "articles": {
+    "js": "/articles.40099d3476b9654d29e2.js",
+    "css": "/articles.css?40099d3476b9654d29e2"
+  },
+  "tags": {
+    "js": "/tags.40099d3476b9654d29e2.js",
+    "css": "/tags.css?40099d3476b9654d29e2"
+  },
+  "categories": {
+    "js": "/categories.40099d3476b9654d29e2.js",
+    "css": "/categories.css?40099d3476b9654d29e2"
+  },
+  "home": {
+    "js": "/home.40099d3476b9654d29e2.js",
+    "css": "/home.css?40099d3476b9654d29e2"
+  },
+  "about": {
+    "js": "/about.40099d3476b9654d29e2.js",
+    "css": "/about.css?40099d3476b9654d29e2"
+  }
+}
+```
+`articles.DOCS`即是通过articles-loader收集的md文章信息。
+<br/>收集上来的信息包含哪些？请见[使用 React + Koa2 + markdown 从零搭建博客（二）](/articles/2018/1/6/setupblog2.md)
