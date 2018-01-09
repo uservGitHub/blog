@@ -8,7 +8,8 @@
     "pid_file": "./logs/blog.pid",
     "ignoreWatch": ["[\\/\\\\]\\./", "node_modules", "src", "test"],
     "watch": "true",
-    "exec_mode": "fork",
+    "exec_mode": "cluster",
+    "instances": "2",
     "env": {
       "NODE_ENV": "production"
     }
