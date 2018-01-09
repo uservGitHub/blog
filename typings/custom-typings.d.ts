@@ -7,3 +7,7 @@ declare module "*.json" {
 declare module "*.DOCS"
 
 declare module "react-markdown"
+
+declare module "koa-static-cache"
+
+declare module "koa-convert"

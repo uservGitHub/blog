@@ -76,19 +76,6 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-send@*":
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/@types/koa-send/-/koa-send-4.1.1.tgz#88f57cbe0343c8204903f9096d8ff6b98ec3296f"
-  dependencies:
-    "@types/koa" "*"
-
-"@types/koa-static@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/@types/koa-static/-/koa-static-4.0.0.tgz#4cddce6adf45221bacfb2842b3621dc92f4d642c"
-  dependencies:
-    "@types/koa" "*"
-    "@types/koa-send" "*"
-
 "@types/koa@*", "@types/koa@^2.0.43":
   version "2.0.43"
   resolved "https://registry.npmjs.org/@types/koa/-/koa-2.0.43.tgz#331a92dbfef93e97a13ce9595af7d84745c29874"
@@ -1793,7 +1780,7 @@ component-inherit@0.0.3:
   version "0.0.3"
   resolved "https://registry.npmjs.org/component-inherit/-/component-inherit-0.0.3.tgz#645fc4adf58b72b649d5cae65135619db26ff143"
 
-compressible@~2.0.11:
+compressible@~2.0.11, compressible@~2.0.6:
   version "2.0.12"
   resolved "https://registry.npmjs.org/compressible/-/compressible-2.0.12.tgz#c59a5c99db76767e9876500e271ef63b3493bd66"
   dependencies:
@@ -2112,7 +2099,7 @@ debug@2.6.8:
   dependencies:
     ms "2.0.0"
 
-debug@2.6.9, debug@^2.1.1, debug@^2.2.0, debug@^2.4.4, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8, debug@~2.6.4, debug@~2.6.6, debug@~2.6.9:
+debug@2.6.9, debug@^2.1.1, debug@^2.2.0, debug@^2.4.4, debug@^2.6.6, debug@^2.6.8, debug@~2.6.4, debug@~2.6.6, debug@~2.6.9:
   version "2.6.9"
   resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   dependencies:
@@ -3021,6 +3008,10 @@ fs-extra@3.0.1:
     jsonfile "^3.0.0"
     universalify "^0.1.0"
 
+fs-readdir-recursive@~1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/fs-readdir-recursive/download/fs-readdir-recursive-1.0.0.tgz#8cd1745c8b4f8a29c8caec392476921ba195f560"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -3378,7 +3369,7 @@ http-deceiver@^1.2.7:
   version "1.2.7"
   resolved "https://registry.npmjs.org/http-deceiver/-/http-deceiver-1.2.7.tgz#fa7168944ab9a519d337cb0bec7284dc3e723d87"
 
-http-errors@1.6.2, http-errors@^1.2.8, http-errors@^1.3.1, http-errors@^1.6.1, http-errors@~1.6.1, http-errors@~1.6.2:
+http-errors@1.6.2, http-errors@^1.2.8, http-errors@^1.3.1, http-errors@~1.6.1, http-errors@~1.6.2:
   version "1.6.2"
   resolved "https://registry.npmjs.org/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
   dependencies:
@@ -3952,7 +3943,7 @@ koa-compose@^4.0.0:
 
 koa-convert@^1.2.0:
   version "1.2.0"
-  resolved "https://registry.npmjs.org/koa-convert/-/koa-convert-1.2.0.tgz#da40875df49de0539098d1700b50820cebcd21d0"
+  resolved "http://registry.npm.taobao.org/koa-convert/download/koa-convert-1.2.0.tgz#da40875df49de0539098d1700b50820cebcd21d0"
   dependencies:
     co "^4.6.0"
     koa-compose "^3.0.0"
@@ -3972,21 +3963,15 @@ koa-router@^7.3.0:
     path-to-regexp "^1.1.1"
     urijs "^1.19.0"
 
-koa-send@^4.1.0:
-  version "4.1.2"
-  resolved "https://registry.npmjs.org/koa-send/-/koa-send-4.1.2.tgz#92861d184c4d8458a54f92e6708e09b14d64111c"
+koa-static-cache@^5.1.1:
+  version "5.1.1"
+  resolved "http://registry.npm.taobao.org/koa-static-cache/download/koa-static-cache-5.1.1.tgz#d73dc79183fd052f86a47a0b64080d8670de8a38"
   dependencies:
-    debug "^2.6.3"
-    http-errors "^1.6.1"
-    mz "^2.6.0"
-    resolve-path "^1.3.3"
-
-koa-static@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.npmjs.org/koa-static/-/koa-static-4.0.2.tgz#6cda92d88d771dcaad9f0d825cd94a631c861a1a"
-  dependencies:
-    debug "^2.6.8"
-    koa-send "^4.1.0"
+    compressible "~2.0.6"
+    debug "*"
+    fs-readdir-recursive "~1.0.0"
+    mime-types "~2.1.8"
+    mz "~2.6.0"
 
 koa@^2.4.1:
   version "2.4.1"
@@ -4549,7 +4534,7 @@ mime-db@~1.30.0:
   version "1.30.0"
   resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.30.0.tgz#74c643da2dd9d6a45399963465b26d5ca7d71f01"
 
-mime-types@^2.0.7, mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.15, mime-types@~2.1.16, mime-types@~2.1.17, mime-types@~2.1.7:
+mime-types@^2.0.7, mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.15, mime-types@~2.1.16, mime-types@~2.1.17, mime-types@~2.1.7, mime-types@~2.1.8:
   version "2.1.17"
   resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.17.tgz#09d7a393f03e995a79f8af857b70a9e0ab16557a"
   dependencies:
@@ -4668,9 +4653,9 @@ mute-stream@0.0.5:
   version "0.0.5"
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
 
-mz@^2.6.0:
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
+mz@~2.6.0:
+  version "2.6.0"
+  resolved "http://registry.npm.taobao.org/mz/download/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
   dependencies:
     any-promise "^1.0.0"
     object-assign "^4.0.1"
@@ -5049,7 +5034,7 @@ path-exists@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/path-exists/-/path-exists-3.0.0.tgz#ce0ebeaa5f78cb18925ea7d810d7b59b010fd515"
 
-path-is-absolute@1.0.1, path-is-absolute@^1.0.0, path-is-absolute@^1.0.1:
+path-is-absolute@^1.0.0, path-is-absolute@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
 
@@ -5998,13 +5983,6 @@ resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
 
-resolve-path@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.npmjs.org/resolve-path/-/resolve-path-1.3.3.tgz#4d83aba6468c2b8e632a575e3f52b0fa0dbe1a5c"
-  dependencies:
-    http-errors "~1.5.0"
-    path-is-absolute "1.0.1"
-
 resolve@^1.1.6, resolve@^1.1.7, resolve@^1.2.0:
   version "1.5.0"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
@@ -6705,13 +6683,13 @@ tfunk@^3.0.1:
 
 thenify-all@^1.0.0:
   version "1.6.0"
-  resolved "https://registry.npmjs.org/thenify-all/-/thenify-all-1.6.0.tgz#1a1918d402d8fc3f98fbf234db0bcc8cc10e9726"
+  resolved "http://registry.npm.taobao.org/thenify-all/download/thenify-all-1.6.0.tgz#1a1918d402d8fc3f98fbf234db0bcc8cc10e9726"
   dependencies:
     thenify ">= 3.1.0 < 4"
 
 "thenify@>= 3.1.0 < 4":
   version "3.3.0"
-  resolved "https://registry.npmjs.org/thenify/-/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
+  resolved "http://registry.npm.taobao.org/thenify/download/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
   dependencies:
     any-promise "^1.0.0"
 

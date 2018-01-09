@@ -1,7 +1,8 @@
 import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
 import * as Router from 'koa-router';
-import * as Static from 'koa-static';
+import * as Static from 'koa-static-cache';
+import * as convert from 'koa-convert';
 import * as config from 'config';
 import home from './routers/home';
 import articles from './routers/articles';
@@ -11,6 +12,7 @@ import about from './routers/about';
 
 const path = require('path');
 const port = config.get('port');
+const cacheOptions = config.get('cache');
 
 const app = new Koa();
 
@@ -23,8 +25,8 @@ router.use('/about', about.routes(), about.allowedMethods());
 router.use('/categories', categories.routes(), categories.allowedMethods());
 
 app.use(bodyParser())
-   .use(Static(path.join(__dirname, '../website')))
-   .use(Static(path.join(process.cwd(), 'public')))
+   .use(convert(Static(path.join(__dirname, '../website'), cacheOptions)))
+   .use(convert(Static(path.join(process.cwd(), 'public'), cacheOptions)))
    .use(router.routes())
    .use(router.allowedMethods()); // 加载路由中间件
 
