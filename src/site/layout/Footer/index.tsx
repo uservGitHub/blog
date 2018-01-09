@@ -1,7 +1,13 @@
 import * as React from 'react';
 import './style.less';
 
-export default class Footer extends React.PureComponent<any, any> {
+export default class Footer extends React.Component<any, any> {
+  constructor(props:any) {
+    super(props);
+    this.state = {
+      PV: 0
+    };
+  }
   render() {
     return (
       <footer>
@@ -44,13 +50,19 @@ export default class Footer extends React.PureComponent<any, any> {
                 </li>
               </ul>
               <p className="copyright text-muted">
-                Copyright © hihl 2018 - 浙ICP备17040886号
+                历史访问量：{this.state.PV || 0}
                 <br/>
+                Copyright © hihl 2018 - 浙ICP备17040886号
               </p>
             </div>
           </div>
         </div>
       </footer>
     );
+  }
+
+  componentDidMount() {
+    const PV = (window as any).__CONFIG__.PV;
+    this.setState({ PV });
   }
 }

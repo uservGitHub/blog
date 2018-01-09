@@ -4,7 +4,14 @@ import './style.less';
 import Layout from '../../layout/index';
 import CodeBlock from "./CodeBlock";
 
-export default class ArticlePage extends React.PureComponent<{ article: any }, any> {
+export default class ArticlePage extends React.Component<{ article: any }, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      views: 0
+    };
+  }
+
   render() {
     const { title, date, content, category, tags, summary } = this.props.article;
     return (
@@ -18,6 +25,7 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
                   <span className="meta">
                     {category}
                     <span>日期 {date}</span>
+                    <span>阅读量 {this.state.views}</span>
                   </span>
                   <div style={{ marginTop: 20, textAlign: 'center' }}>
                     {
@@ -50,5 +58,10 @@ export default class ArticlePage extends React.PureComponent<{ article: any }, a
         </article>
       </Layout>
     );
+  }
+
+  componentDidMount() {
+    const views = (window as any).__CONFIG__.APV;
+    this.setState({ views });
   }
 }

@@ -1,6 +1,3 @@
-/**
- * Created by Zhengfeng.Yao on 2017/12/26.
- */
 import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
 import * as Router from 'koa-router';
