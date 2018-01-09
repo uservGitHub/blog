@@ -11,6 +11,7 @@
     "stop": "pm2 delete pm2.json"
   },
   "devDependencies": {
+    "@types/config": "^0.0.33",
     "@types/koa": "^2.0.43",
     "@types/koa-bodyparser": "^3.0.26",
     "@types/koa-router": "^7.0.27",
@@ -30,10 +31,12 @@
   },
   "dependencies": {
     "bootstrap": "3",
+    "config": "^1.29.1",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.3.0",
     "koa-static": "^4.0.2",
+    "leancloud-storage": "^3.4.2",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

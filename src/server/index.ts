@@ -5,6 +5,7 @@ import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
 import * as Router from 'koa-router';
 import * as Static from 'koa-static';
+import * as config from 'config';
 import home from './routers/home';
 import articles from './routers/articles';
 import tags from './routers/tags';
@@ -12,6 +13,7 @@ import categories from './routers/categories';
 import about from './routers/about';
 
 const path = require('path');
+const port = config.get('port');
 
 const app = new Koa();
 
@@ -29,4 +31,4 @@ app.use(bodyParser())
    .use(router.routes())
    .use(router.allowedMethods()); // 加载路由中间件
 
-app.listen(3000, () => console.log(`The server is running at http://localhost:3000/`));
+app.listen(port, () => console.log(`The server is running at http://localhost:${port}/`));
