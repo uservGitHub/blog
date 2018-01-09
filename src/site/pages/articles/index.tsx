@@ -63,5 +63,8 @@ export default class ArticlePage extends React.Component<{ article: any }, any> 
   componentDidMount() {
     const views = (window as any).__CONFIG__.APV;
     this.setState({ views });
+    const _hmt = (window as any)._hmt;
+    const { title, key } = this.props.article;
+    _hmt.push(['_trackEvent', 'read', key, title]);
   }
 }

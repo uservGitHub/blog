@@ -17,6 +17,15 @@ export default function renderView(page: string, config: any) {
     <body class="is-loading">
       <div id="wrapper" class="fade-in overlay">${html}</div>
       ${page === 'articles' ? '<script src="/highlight/9.12.0/highlight.min.js"></script>' : ''}
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2dc6c12306b87633571e51941e0a12c5";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
       <script src="${assets[page].js}"></script>
     </body>
   </html>
