@@ -2,6 +2,7 @@ import * as AV from 'leancloud-storage';
 import * as config from 'config';
 import * as R from 'ramda';
 
+// 从配置文件读取appId与appKey
 AV.init(config.get('leanCloud'));
 
 const Counter = AV.Object.extend('Counter');
@@ -15,7 +16,7 @@ async function incrementTotal() {
     const totalData = (<any> await query.equalTo('key', 'total').find())[0];
     const total = AV.Object.createWithoutData('Counter', totalData.id);
     total.increment('time', 1);
-    const data = <any> await total.save(null, { fetchWhenSave: true });
+    const data = <any> await total.save(null, { fetchWhenSave: true }); // 保存后获取最新数据
     return R.objOf('total', data.attributes.time);
   } catch(e) {
     console.log(e);

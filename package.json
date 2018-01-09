@@ -5,7 +5,7 @@
   "author": "hihl <348267823@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tdtool start",
+    "dev": "export NODE_ENV=development && tdtool start",
     "release": "export NODE_ENV=production && tdtool build",
     "start": "pm2 start pm2.json",
     "stop": "pm2 delete pm2.json"
