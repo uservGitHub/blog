@@ -14,7 +14,7 @@ categoriesRouter.get('/', async ( ctx ) => {
   const { total } = <any> await Counter.incrementTotal();
   ctx.body = renderView('categories', {
     categories,
-    total,
+    PV: total,
     html: ReactDOMServer.renderToStaticMarkup(React.createElement(Tags, { tags: categories, title: '分类' }))
   });
 });
