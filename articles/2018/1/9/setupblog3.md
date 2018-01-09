@@ -62,3 +62,13 @@ async function incrementTotal() {
 }
 ```
 上述代码中，appId和appKey是从配置文件中读取，production环境的配置不会提交到github，避免泄漏。
+在页面被访问时，调用incrementTotal()，并获取最新的访问量，并注入到页面全局变量`window.__CONFIG__`中，在footer.tsx `componentDidMount`中设置此值
+```js
+  componentDidMount() {
+    const PV = (window as any).__CONFIG__.PV;
+    this.setState({ PV });
+  }
+```
+## 总结
+   整个系列中，涉及到的点较多，由于本人以前较少写文章，可能不够有条理，如有问题可以qq或者发邮件联系，我会抽空解答。本博客暂时没时间加评论功能，
+后续会抽空加一下。PS：博客最终是部署在阿里云ECT上，1核2G的打2折买了3年，平均一年500+。
