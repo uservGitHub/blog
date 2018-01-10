@@ -8,36 +8,52 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const isDebug = process.env.NODE_ENV !== 'production';
 const root = path.resolve(process.cwd(), 'dist');
 
-const clientConfig = new Config({
+const AssetsPlugin = require('assets-webpack-plugin');
+
+const siteConfig = new Config({
   entry: {
-    home: './src/website/pages/home/index.js'
+    home: './src/site/home.tsx',
+    articles: './src/site/articles.tsx',
+    tags: './src/site/tags.tsx',
+    categories: './src/site/categories.tsx',
+    about: './src/site/about.tsx'
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
   minimize: !isDebug,
-  extends: [['react'], ['less', {
+  sourceMap: isDebug,
+  extends: [['less', {
     extractCss: {
-      filename: isDebug ? '[name].css?[hash]' : '[name].css',
-      allChunks: true
-    },
-    happypack: true
+      filename: '[name].css?[hash]'
+    }
   }]]
 });
 
-clientConfig.add(
-  'plugin.CleanWebpackPlugin',
-  new CleanWebpackPlugin(
-    ['website'],
-    {
-      root,                                  //根目录
-      verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
-      dry:      false        　　　　　　　　　　//启用删除文件
+siteConfig.add('rule.ts', {
+  test: /\.tsx?$/,
+  exclude: /node_modules/,
+  use: [{
+    loader: 'babel-loader',
+    query: {
+      cacheDirectory: true,
+      babelrc: false,
+      presets: [
+        'es2015-ie',
+        'react',
+        'stage-2',
+      ],
+      plugins: [
+        'transform-decorators-legacy',
+        'transform-class-properties',
+        'transform-runtime'
+      ]
     }
-  )
-);
+  }, {
+    loader: 'ts-loader'
+  }]
+});
 
-const AssetsPlugin = require('assets-webpack-plugin');
-clientConfig.add(
+siteConfig.add(
   'plugin.AssetsPlugin',
   new AssetsPlugin({
     path: './dist/website',
@@ -46,6 +62,7 @@ clientConfig.add(
   })
 );
 
+/* 服务端配置 */
 const serverConfig = new Config({
   entry: './src/server/index.ts',
   dist: './dist/server',
@@ -54,10 +71,10 @@ const serverConfig = new Config({
   devServer: isDebug,
   sourceMap: true,
   externals: [/^\.\.\/website\/assets\.json$/, require('webpack-node-externals')()],
-  extends: ['react', 'less']
+  extends: [['less', {
+    target: 'node'
+  }]]
 });
-
-serverConfig.add('resolve.extensions', [".tsx", ".ts", ".js"]);
 
 serverConfig.add('rule.ts', {
   test: /\.tsx?$/,
@@ -65,24 +82,49 @@ serverConfig.add('rule.ts', {
   exclude: /node_modules/
 });
 
-serverConfig.add('rule.articles', {
-  test: /\.DOCS$/,
-  loader: 'articles-loader',
-  query: {
-    root: path.join(__dirname, 'articles')
-  }
-});
-
-serverConfig.add(
-  'plugin.CleanWebpackPlugin',
-  new CleanWebpackPlugin(
-    ['server'],
-    {
-      root,                                  //根目录
-      verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
-      dry:      false        　　　　　　　　　　//启用删除文件
+function loadCommon(config, key) {
+  config.add('resolve.extensions', [".tsx", ".ts", ".js"]);
+  config.add(
+    'plugin.CleanWebpackPlugin',
+    new CleanWebpackPlugin(
+      [key],
+      {
+        root,                                  //根目录
+        verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
+        dry:      false        　　　　　　　　　　//启用删除文件
+      }
+    )
+  );
+  config.add('rule.articles', {
+    test: /\.DOCS$/,
+    loader: 'articles-loader',
+    query: {
+      root: path.join(__dirname, 'articles')
     }
-  )
-);
+  });
 
-module.exports = [clientConfig.resolve(), serverConfig.resolve()];
+  // config.add('rule.glyphicons', {
+  //   test: /glyphicons-halflings-regular\.(woff|woff2|ttf|eot|svg)($|\?)/,
+  //   use: [{
+  //     loader: 'url-loader',
+  //     options: {
+  //       limit: 10000,
+  //       name: 'fonts/[name].[ext]'
+  //     }
+  //   }]
+  // });
+
+  config.add('rule.IMAGE', {
+    test: /\.(png|jpg|jpeg|gif)?$/i,
+    loader: 'url-loader',
+    query: {
+      limit: 10000,
+      name: '[name]-[hash:5].[ext]'
+    }
+  });
+}
+
+loadCommon(siteConfig, 'website');
+loadCommon(serverConfig, 'server');
+
+module.exports = [siteConfig.resolve(), serverConfig.resolve()];

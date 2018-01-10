@@ -1,60 +1,33 @@
-/**
- * Created by Zhengfeng.Yao on 2017/12/26.
- */
-import assets from '../website/assets.json';
 import * as Koa from 'koa';
 import * as bodyParser from 'koa-bodyparser';
 import * as Router from 'koa-router';
-import * as Static from 'koa-static';
-import articles from './articles.DOCS';
-import * as R from 'ramda';
+import * as Static from 'koa-static-cache';
+import * as convert from 'koa-convert';
+import * as config from 'config';
+import home from './routers/home';
+import articles from './routers/articles';
+import tags from './routers/tags';
+import categories from './routers/categories';
+import about from './routers/about';
 
 const path = require('path');
-
-const pageSize = 10;
+const port = config.get('port');
+const cacheOptions = config.get('cache');
 
 const app = new Koa();
-
-const home = new Router();
-
-function renderView(page: any, config: any) {
- return `
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>hihl_妖风</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="${assets[page].css}">
-      <script> window.__CONFIG__ = ${JSON.stringify(config)} </script>
-    </head>
-    <body class="is-loading">
-      <div id="wrapper" class="fade-in overlay"></div>
-      <script src="${assets[page].js}"></script>
-    </body>
-  </html>
-  `;
-}
-
-home.get('/', async ( ctx ) => {
-  const current = ctx.query.page || 1;
-  const offset = (current - 1) * pageSize;
-  ctx.body = renderView('home', {
-    categories: articles.categories,
-    tags: articles.tags,
-    total: articles.mdsArray.length,
-    pageSize,
-    articles: R.slice(offset, offset + pageSize)(articles.mdsArray)
-  });
-});
 
 // 装载所有子路由
 const router = new Router();
 router.use('/', home.routes(), home.allowedMethods());
+router.use('/articles', articles.routes(), articles.allowedMethods());
+router.use('/tags', tags.routes(), tags.allowedMethods());
+router.use('/about', about.routes(), about.allowedMethods());
+router.use('/categories', categories.routes(), categories.allowedMethods());
 
 app.use(bodyParser())
-   .use(Static(path.join(__dirname, '../website')))
+   .use(convert(Static(path.join(__dirname, '../website'), cacheOptions)))
+   .use(convert(Static(path.join(process.cwd(), 'public'), cacheOptions)))
    .use(router.routes())
    .use(router.allowedMethods()); // 加载路由中间件
 
-app.listen(3000, () => console.log(`The server is running at http://localhost:3000/`));
+app.listen(port, () => console.log(`The server is running at http://localhost:${port}/`));

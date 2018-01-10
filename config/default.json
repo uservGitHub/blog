@@ -1,0 +1,10 @@
+{
+  "port": 3000,
+  "leanCloud": {
+    "appId": "xxx", // 配置示例，无效appId
+    "appKey": "xxxx" // 配置示例，无效appKey
+  },
+  "cache": {
+    "maxAge": 31536000
+  }
+}

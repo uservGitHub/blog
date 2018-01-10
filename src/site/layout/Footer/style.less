@@ -1,0 +1,50 @@
+@import "../mixin.less";
+
+.container {
+  .tabled();
+}
+
+footer {
+  .footer {
+    padding: 50px 0 65px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .text-muted {
+    color: #777;
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .list-inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+    li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+
+      a {
+        color: #404040;
+
+        &:hover {
+          color: #23527c;
+        }
+      }
+    }
+  }
+}
