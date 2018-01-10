@@ -206,3 +206,4 @@ module.exports = function MT(markdown) {
 ## 小结
 articles-loader的分析就到此结束了，其中的思路大体和dva解析markdown的思路一致的，先了解此问，再去看dva部份代码，相信是有所帮助的；
 下一篇，我们将介绍，如何使用leanCloud给站点添加访问量统计，敬请期待。
+源码地址：[https://github.com/hihl/blog](https://github.com/hihl/blog)

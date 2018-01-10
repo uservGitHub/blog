@@ -72,3 +72,5 @@ async function incrementTotal() {
 ## 总结
    整个系列中，涉及到的点较多，由于本人以前较少写文章，可能不够有条理，如有问题可以qq或者发邮件联系，我会抽空解答。本博客暂时没时间加评论功能，
 后续会抽空加一下。PS：博客最终是部署在阿里云ECT上，1核2G的打2折买了3年，平均一年500+。
+
+源码地址：[https://github.com/hihl/blog](https://github.com/hihl/blog)
