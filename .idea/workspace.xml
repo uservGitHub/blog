@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d2afed4-023f-44c4-bb50-c7bc2358e692" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles/2018/1/10/dockermysql.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" afterPath="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/articles.DOCS" afterPath="$PROJECT_DIR$/src/articles.DOCS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx" afterPath="$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,16 +19,102 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="dockermysql.md" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dockermysql.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/articles/2018/1/10/dockermysql.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="318">
-                <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <first_editor relative-caret-position="208">
+                <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articles.DOCS" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/articles.DOCS">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setupblog1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/articles/2018/1/1/setupblog1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="112">
+                <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+                <folding>
+                  <marker date="1515686778000" expanded="true" signature="761:1130" ph="{&quot;dist&quot;: './dist/website'...}" />
+                  <marker date="1515686778000" expanded="true" signature="772:851" ph="{&quot;home&quot;: './src/site/home.tsx'...}" />
+                  <marker date="1515686778000" expanded="true" signature="997:1128" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="998:1127" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="1007:1126" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="1079:1122" ph="{&quot;filename&quot;: '[name].css?[hash]'...}" />
+                  <marker date="1515686778000" expanded="true" signature="1160:1588" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="1238:1586" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="1239:1554" ph="{&quot;loader&quot;: 'babel-loader'...}" />
+                  <marker date="1515686778000" expanded="true" signature="1280:1550" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="1347:1413" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="1430:1544" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="1556:1585" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+                  <marker date="1515686778000" expanded="true" signature="1698:1783" ph="{&quot;path&quot;: './dist/website'...}" />
+                  <marker date="1515686778000" expanded="true" signature="1789:1800" ph="/*...*/" />
+                  <marker date="1515686778000" expanded="true" signature="1833:2166" ph="{&quot;entry&quot;: './src/server/index.ts'...}" />
+                  <marker date="1515686778000" expanded="true" signature="2128:2164" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="2129:2163" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="2138:2162" ph="{&quot;target&quot;: 'node'...}" />
+                  <marker date="1515686778000" expanded="true" signature="2198:2303" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+                  <marker date="1515686778000" expanded="true" signature="2340:3368" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="2496:2662" ph="{&quot;root&quot;: root...}" />
+                  <marker date="1515686778000" expanded="true" signature="2676:2748" ph="//..." />
+                  <marker date="1515686778000" expanded="true" signature="2779:2901" ph="{&quot;loader&quot;: 'articles-loader'...}" />
+                  <marker date="1515686778000" expanded="true" signature="2845:2897" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="2966:3174" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="3051:3170" ph="[...]" />
+                  <marker date="1515686778000" expanded="true" signature="3052:3169" ph="{&quot;loader&quot;: 'url-loader'...}" />
+                  <marker date="1515686778000" expanded="true" signature="3097:3163" ph="{&quot;name&quot;: 'fonts/[name].[ext]'...}" />
+                  <marker date="1515686778000" expanded="true" signature="3221:3364" ph="{&quot;loader&quot;: 'url-loader'...}" />
+                  <marker date="1515686778000" expanded="true" signature="3297:3360" ph="{&quot;name&quot;: '[name]-[hash:5].[ext]'...}" />
+                  <marker date="1515686778000" expanded="true" signature="3577:3716" ph="..." />
+                  <marker date="1515686778000" expanded="true" signature="4005:4279" ph="..." />
+                  <marker date="1515686778000" expanded="true" signature="4362:4773" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="4578:4625" ph="{&quot;current&quot;: current...}" />
+                  <marker date="1515686778000" expanded="true" signature="4659:4769" ph="{&quot;pagination&quot;: pagination...}" />
+                  <marker date="1515686778000" expanded="true" signature="5068:5623" ph="{...}" />
+                  <marker date="1515686778000" expanded="true" signature="5084:5184" ph="{&quot;js&quot;: &quot;/articles.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515686778000" expanded="true" signature="5196:5288" ph="{&quot;js&quot;: &quot;/tags.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515686778000" expanded="true" signature="5306:5410" ph="{&quot;js&quot;: &quot;/categories.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515686778000" expanded="true" signature="5422:5514" ph="{&quot;js&quot;: &quot;/home.40099d3476b9654d29e2.js&quot;...}" />
+                  <marker date="1515686778000" expanded="true" signature="5527:5621" ph="{&quot;js&quot;: &quot;/about.40099d3476b9654d29e2.js&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeBlock.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/site/pages/articles/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/site/layout/Nav/index.tsx" />
         <option value="$PROJECT_DIR$/public/highlight.min.js" />
         <option value="$PROJECT_DIR$/public/highlight/9.12.0/github.min.css" />
-        <option value="$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx" />
         <option value="$PROJECT_DIR$/typings/index.d.ts" />
         <option value="$PROJECT_DIR$/src/site/layout/mixin.less" />
         <option value="$PROJECT_DIR$/src/site/layout/Nav/style.less" />
@@ -92,7 +179,6 @@
         <option value="$PROJECT_DIR$/tdtool.config.js" />
         <option value="$PROJECT_DIR$/src/site/pages/tags/index.tsx" />
         <option value="$PROJECT_DIR$/src/site/layout/Footer/style.less" />
-        <option value="$PROJECT_DIR$/src/articles.DOCS" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/src/server/routers/about.ts" />
         <option value="$PROJECT_DIR$/src/server/routers/tags.ts" />
@@ -112,9 +198,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/server/routers/categories.ts" />
         <option value="$PROJECT_DIR$/articles/2018/1/9/setupblog3.md" />
-        <option value="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" />
         <option value="$PROJECT_DIR$/articles/2018/1/6/setupblog2.md" />
         <option value="$PROJECT_DIR$/articles/2018/1/10/dockermysql.md" />
+        <option value="$PROJECT_DIR$/articles/2018/1/1/setupblog1.md" />
+        <option value="$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx" />
+        <option value="$PROJECT_DIR$/src/articles.DOCS" />
       </list>
     </option>
   </component>
@@ -153,8 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,19 +277,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="articles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2018" />
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="10" />
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,10 +376,6 @@
               <option name="myItemId" value="1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -248,6 +392,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="2018" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -257,6 +405,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,32 +614,34 @@
       <workItem from="1514899108863" duration="11000" />
       <workItem from="1514899139080" duration="26550000" />
       <workItem from="1515042272295" duration="58078000" />
-      <workItem from="1515571555584" duration="4335000" />
+      <workItem from="1515571555584" duration="4679000" />
+      <workItem from="1515642249136" duration="1964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148170000" />
+    <option name="totallyTimeSpent" value="150478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3815621" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3815621" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948782" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -578,13 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="674" lean-forward="false" selection-start-line="0" selection-start-column="674" selection-end-line="0" selection-end-column="674" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -686,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/articles.DOCS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/leancloud-storage/storage.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -777,13 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/pages/articles/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -834,21 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/2018/1/1/setupblog1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="337">
-            <caret line="253" column="5" lean-forward="false" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/articles/2018/1/6/setupblog2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -864,28 +980,102 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1140">
             <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
-            <folding>
-              <marker date="1515547957000" expanded="false" signature="715:810" ph="..." />
-              <marker date="1515547957000" expanded="true" signature="916:934" ph="/** 添加历史访问量 ...*/" />
-              <marker date="1515547957000" expanded="true" signature="967:1375" ph="{...}" />
-              <marker date="1515547957000" expanded="true" signature="975:1375" ph="{...}" />
-              <marker date="1515547957000" expanded="true" signature="1041:1375" ph="&lt;any/&gt;" />
-              <marker date="1515547957000" expanded="true" signature="1216:1375" ph="&lt;any/&gt;" />
-              <marker date="1515547957000" expanded="true" signature="1574:1652" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/pages/articles/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/pages/articles/CodeBlock.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/articles/2018/1/10/dockermysql.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="318">
-            <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <first_editor relative-caret-position="208">
+            <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/2018/1/1/setupblog1.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="112">
+            <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <folding>
+              <marker date="1515686778000" expanded="true" signature="761:1130" ph="{&quot;dist&quot;: './dist/website'...}" />
+              <marker date="1515686778000" expanded="true" signature="772:851" ph="{&quot;home&quot;: './src/site/home.tsx'...}" />
+              <marker date="1515686778000" expanded="true" signature="997:1128" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="998:1127" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="1007:1126" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="1079:1122" ph="{&quot;filename&quot;: '[name].css?[hash]'...}" />
+              <marker date="1515686778000" expanded="true" signature="1160:1588" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="1238:1586" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="1239:1554" ph="{&quot;loader&quot;: 'babel-loader'...}" />
+              <marker date="1515686778000" expanded="true" signature="1280:1550" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="1347:1413" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="1430:1544" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="1556:1585" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+              <marker date="1515686778000" expanded="true" signature="1698:1783" ph="{&quot;path&quot;: './dist/website'...}" />
+              <marker date="1515686778000" expanded="true" signature="1789:1800" ph="/*...*/" />
+              <marker date="1515686778000" expanded="true" signature="1833:2166" ph="{&quot;entry&quot;: './src/server/index.ts'...}" />
+              <marker date="1515686778000" expanded="true" signature="2128:2164" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="2129:2163" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="2138:2162" ph="{&quot;target&quot;: 'node'...}" />
+              <marker date="1515686778000" expanded="true" signature="2198:2303" ph="{&quot;loader&quot;: 'ts-loader'...}" />
+              <marker date="1515686778000" expanded="true" signature="2340:3368" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="2496:2662" ph="{&quot;root&quot;: root...}" />
+              <marker date="1515686778000" expanded="true" signature="2676:2748" ph="//..." />
+              <marker date="1515686778000" expanded="true" signature="2779:2901" ph="{&quot;loader&quot;: 'articles-loader'...}" />
+              <marker date="1515686778000" expanded="true" signature="2845:2897" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="2966:3174" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="3051:3170" ph="[...]" />
+              <marker date="1515686778000" expanded="true" signature="3052:3169" ph="{&quot;loader&quot;: 'url-loader'...}" />
+              <marker date="1515686778000" expanded="true" signature="3097:3163" ph="{&quot;name&quot;: 'fonts/[name].[ext]'...}" />
+              <marker date="1515686778000" expanded="true" signature="3221:3364" ph="{&quot;loader&quot;: 'url-loader'...}" />
+              <marker date="1515686778000" expanded="true" signature="3297:3360" ph="{&quot;name&quot;: '[name]-[hash:5].[ext]'...}" />
+              <marker date="1515686778000" expanded="true" signature="3577:3716" ph="..." />
+              <marker date="1515686778000" expanded="true" signature="4005:4279" ph="..." />
+              <marker date="1515686778000" expanded="true" signature="4362:4773" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="4578:4625" ph="{&quot;current&quot;: current...}" />
+              <marker date="1515686778000" expanded="true" signature="4659:4769" ph="{&quot;pagination&quot;: pagination...}" />
+              <marker date="1515686778000" expanded="true" signature="5068:5623" ph="{...}" />
+              <marker date="1515686778000" expanded="true" signature="5084:5184" ph="{&quot;js&quot;: &quot;/articles.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515686778000" expanded="true" signature="5196:5288" ph="{&quot;js&quot;: &quot;/tags.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515686778000" expanded="true" signature="5306:5410" ph="{&quot;js&quot;: &quot;/categories.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515686778000" expanded="true" signature="5422:5514" ph="{&quot;js&quot;: &quot;/home.40099d3476b9654d29e2.js&quot;...}" />
+              <marker date="1515686778000" expanded="true" signature="5527:5621" ph="{&quot;js&quot;: &quot;/about.40099d3476b9654d29e2.js&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/articles.DOCS">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

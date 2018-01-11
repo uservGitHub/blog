@@ -33,7 +33,7 @@ tsconfig.json typescript编译选项配置文件
 
 tdtool内置了一部份webpack配置，以下配置为扩展配置
 
-```js
+```js collapsable
 const siteConfig = new Config({
   entry: {
     home: './src/site/home.tsx',
