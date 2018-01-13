@@ -33,7 +33,7 @@ tsconfig.json typescript编译选项配置文件
 
 tdtool内置了一部份webpack配置，以下配置为扩展配置
 
-```js
+```js collapsable
 const siteConfig = new Config({
   entry: {
     home: './src/site/home.tsx',
@@ -251,3 +251,4 @@ renderView.ts
 ```
 `articles.DOCS`即是通过articles-loader收集的md文章信息。
 <br/>收集上来的信息包含哪些？请见[使用 React + Koa2 + Markdown 从零搭建博客（二）](/articles/2018/1/6/setupblog2.md)
+<br/>源码地址：[https://github.com/hihl/blog](https://github.com/hihl/blog)
