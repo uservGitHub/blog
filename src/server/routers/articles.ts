@@ -11,16 +11,21 @@ const articlesRouter = new Router();
 articlesRouter.get('/:year/:month/:day/:filename', async ( ctx ) => {
   const { year, month, day, filename } = ctx.params;
   const fileKey = `/${year}/${month}/${day}/${filename}`;
-  const article = articles.mdsArray.find((item: any) => item.key === fileKey);
+  const index = articles.mdsArray.findIndex((item: any) => item.key === fileKey);
+  const article = index >= 0 ? articles.mdsArray[index] : null;
+  const previous = index > 0 ? articles.mdsArray[index - 1] : null;
+  const next = index < articles.mdsArray.length - 1 ? articles.mdsArray[index + 1] : null;
   if (!article) {
     ctx.body = '文章不存在';
   } else {
     const PVS = <any> await Counter.incrementReading(fileKey);
     ctx.body = renderView('articles', {
+      previous,
+      next,
       article,
       PV: PVS.total,
       APV: PVS[fileKey],
-      html: ReactDOMServer.renderToStaticMarkup(React.createElement(Article, { article }))
+      html: ReactDOMServer.renderToStaticMarkup(React.createElement(Article, { article, previous, next }))
     });
   }
 });

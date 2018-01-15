@@ -4,7 +4,7 @@ import './style.less';
 import Layout from '../../layout/index';
 import CodeBlock from "./CodeBlock";
 
-export default class ArticlePage extends React.Component<{ article: any }, any> {
+export default class ArticlePage extends React.Component<{ article: any, previous: any, next: any }, any> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -13,7 +13,8 @@ export default class ArticlePage extends React.Component<{ article: any }, any> 
   }
 
   render() {
-    const { title, date, content, category, tags, summary } = this.props.article;
+    const { previous, next, article } = this.props;
+    const { title, date, content, category, tags, summary } = article;
     return (
       <Layout>
         <header className="article-header" style={{ backgroundImage: `url(${require('../article-bg.jpg')})` }}>
@@ -56,6 +57,26 @@ export default class ArticlePage extends React.Component<{ article: any }, any> 
             </div>
           </div>
         </article>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 col-lg-offset-1 col-sm-12 post-container">
+              {
+                !!previous && (
+                  <div className="previous">
+                    上一篇：<a href={`/articles${previous.key}`}>{previous.title}</a>
+                  </div>
+                )
+              }
+              {
+                !!next && (
+                  <div className="next">
+                    下一篇：<a href={`/articles${next.key}`}>{next.title}</a>
+                  </div>
+                )
+              }
+            </div>
+          </div>
+        </div>
       </Layout>
     );
   }
