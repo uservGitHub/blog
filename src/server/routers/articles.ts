@@ -13,8 +13,8 @@ articlesRouter.get('/:year/:month/:day/:filename', async ( ctx ) => {
   const fileKey = `/${year}/${month}/${day}/${filename}`;
   const index = articles.mdsArray.findIndex((item: any) => item.key === fileKey);
   const article = index >= 0 ? articles.mdsArray[index] : null;
-  const previous = index > 0 ? articles.mdsArray[index - 1] : null;
-  const next = index < articles.mdsArray.length - 1 ? articles.mdsArray[index + 1] : null;
+  const next = index > 0 ? articles.mdsArray[index - 1] : null;
+  const previous = index < articles.mdsArray.length - 1 ? articles.mdsArray[index + 1] : null;
   if (!article) {
     ctx.body = '文章不存在';
   } else {
