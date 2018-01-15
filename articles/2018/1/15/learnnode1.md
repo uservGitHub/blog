@@ -66,3 +66,10 @@ ok，然后找到`node_main.cc`，在main方法中打断点，debug运行
 <img src="/images/2018-1-15-learnnode2.jpg"/>
 
 如图所示，我们成功进入了断点。
+
+## 同时调试js及node源码
+
+如果，我们想要同时调试js代码及node.js源码，该如何配置呢？
+回想我们使用webpack debug代码时控制台上会打印`node --inspect-brk=49469 /xxx.js`，node版本<8时打印`--debug --debug-brk=49469`，
+其中这49469就是node.js的调试窗口，所以我们在调试node.js源码时，Program arguments可以这样配置`--inspect-brk=49469 ./test.js`，
+然后再启动一个`Node.js Remote Debug (webStorm中)或 Attach to Node.js/Chrome (cLion中)`，端口号配置为49469，即可同时调试js
