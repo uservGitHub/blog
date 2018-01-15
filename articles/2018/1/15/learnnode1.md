@@ -2,7 +2,7 @@
 title: Node.js源码学习(1) 使用cLion调试node.js源码
 tags: 
  - node.js
-categories: node
+category: node
 summary: >
   本人近期在学习Node.js源码，并将会把学习过程、心得形成笔记。
 ---

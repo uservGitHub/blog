@@ -3,7 +3,7 @@ title: Webpack Loader源码导读之babel-loader
 tags:
   - webpack
   - babel
-categories: 前端
+category: 前端
 summary: >
   webpack应该是当下最主流的前端构建工具之一，但是由于webpack本身糟糕的文档，使得使用者多是会用但不知其所以然，出现问题时难以入手；
   为此，我想根据自身的理解，详细讲解一些常用loader、plugin源码，深入各个loader及其配置所带来的影响；本系列将以babel-loader开篇，
