@@ -16,7 +16,8 @@ const siteConfig = new Config({
     articles: './src/site/articles.tsx',
     tags: './src/site/tags.tsx',
     categories: './src/site/categories.tsx',
-    about: './src/site/about.tsx'
+    about: './src/site/about.tsx',
+    hl: './src/hl/main.tsx'
   },
   dist: './dist/website',
   filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',

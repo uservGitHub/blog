@@ -9,6 +9,7 @@ import articles from './routers/articles';
 import tags from './routers/tags';
 import categories from './routers/categories';
 import about from './routers/about';
+import hl from './routers/hl';
 
 const path = require('path');
 const port = config.get('port');
@@ -23,6 +24,7 @@ router.use('/articles', articles.routes(), articles.allowedMethods());
 router.use('/tags', tags.routes(), tags.allowedMethods());
 router.use('/about', about.routes(), about.allowedMethods());
 router.use('/categories', categories.routes(), categories.allowedMethods());
+router.use('/hl', hl.routes(), hl.allowedMethods());
 
 app.use(bodyParser())
    .use(convert(Static(path.join(__dirname, '../website'), cacheOptions)))
