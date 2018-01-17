@@ -21,3 +21,55 @@ a {
 button {
   outline: 0;
 }
+
+.header {
+  .avatar {
+    padding: 20px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .info {
+    padding: 20px;
+
+    .inline-block {
+      display: inline-block;
+      padding: 0 10px;
+
+      &:not(:last-child) {
+        border-right: 1px solid red;
+      }
+    }
+  }
+}
+
+.article {
+
+  .title {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100px;
+    line-height: 40px;
+    display: inline-block;
+  }
+
+  .row {
+    padding: 10px 20px;
+  }
+
+  .timeline {
+    position: absolute;
+    height: 200px;
+    padding: 0 10px 10px 10px;
+
+    &-line {
+      width: 2px;
+      margin-left: 8px;
+      background: #008cee;
+      height: 100%;
+    }
+  }
+}
