@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d2afed4-023f-44c4-bb50-c7bc2358e692" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles/2018/1/17/lessloader.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/2018/1/15/learnnode1.md" afterPath="$PROJECT_DIR$/articles/2018/1/15/learnnode1.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,26 +18,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dockermysql.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/articles/2018/1/10/dockermysql.md">
+      <file leaf-file-name="lessloader.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/articles/2018/1/17/lessloader.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="95">
-                <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="learnnode1.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/articles/2018/1/15/learnnode1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="436">
-                <caret line="74" column="74" lean-forward="false" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
-                <folding />
+              <first_editor relative-caret-position="268">
+                <caret line="110" column="24" lean-forward="true" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+                <folding>
+                  <marker date="1516172400000" expanded="true" signature="1635:1680" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="1733:1779" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="1917:2083" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="1953:2081" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="1992:2025" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="2043:2077" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="2123:2165" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="2171:2207" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="2542:2572" ph="{&quot;@primary-color&quot;: 'pink'...}" />
+                  <marker date="1516172400000" expanded="true" signature="2602:2686" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="2638:2684" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="3064:3629" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="3158:3482" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="3240:3475" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="3250:3363" ph="//..." />
+                  <marker date="1516172400000" expanded="true" signature="3499:3546" ph="{...}" />
+                  <marker date="1516172400000" expanded="true" signature="3576:3615" ph="{...}" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -48,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/articles/2018/1/15/babelloader.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="95">
-                <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <first_editor relative-caret-position="729">
+                <caret line="63" column="3" lean-forward="true" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
                 <folding>
                   <marker date="1516027483000" expanded="true" signature="1499:1823" ph="{...}" />
                   <marker date="1516027483000" expanded="true" signature="1518:1563" ph="[...]" />
@@ -117,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/site/pages/home/index.tsx" />
         <option value="$PROJECT_DIR$/typings/react-markdown.d.ts" />
         <option value="$PROJECT_DIR$/src/site/pages/header.less" />
         <option value="$PROJECT_DIR$/src/site/pages/articles/style.less" />
@@ -168,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/server/routers/articles.ts" />
         <option value="$PROJECT_DIR$/articles/2018/1/15/babelloader.md" />
         <option value="$PROJECT_DIR$/articles/2018/1/15/learnnode1.md" />
+        <option value="$PROJECT_DIR$/articles/2018/1/17/lessloader.md" />
       </list>
     </option>
   </component>
@@ -254,7 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="15" />
+              <option name="myItemId" value="17" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,7 +285,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="10" />
+              <option name="myItemId" value="15" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,12 +527,12 @@
       <workItem from="1514899139080" duration="26550000" />
       <workItem from="1515042272295" duration="58078000" />
       <workItem from="1515571555584" duration="4679000" />
-      <workItem from="1515642249136" duration="21149000" />
+      <workItem from="1515642249136" duration="30646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169663000" />
+    <option name="totallyTimeSpent" value="179160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -540,8 +545,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31370038" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31370038" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -569,7 +574,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/server/routers/categories" />
     <entry file="file://$PROJECT_DIR$/src/site/tags.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -961,8 +965,19 @@
         <state relative-caret-position="228">
           <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="35" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/2018/1/15/learnnode1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="304">
+            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -980,8 +995,8 @@
     <entry file="file://$PROJECT_DIR$/articles/2018/1/15/babelloader.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <first_editor relative-caret-position="729">
+            <caret line="63" column="3" lean-forward="true" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
             <folding>
               <marker date="1516027483000" expanded="true" signature="1499:1823" ph="{...}" />
               <marker date="1516027483000" expanded="true" signature="1518:1563" ph="[...]" />
@@ -1015,12 +1030,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/2018/1/15/learnnode1.md">
+    <entry file="file://$PROJECT_DIR$/articles/2018/1/17/lessloader.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="436">
-            <caret line="74" column="74" lean-forward="false" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
-            <folding />
+          <first_editor relative-caret-position="268">
+            <caret line="110" column="24" lean-forward="true" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+            <folding>
+              <marker date="1516172400000" expanded="true" signature="1635:1680" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="1733:1779" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="1917:2083" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="1953:2081" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="1992:2025" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="2043:2077" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="2123:2165" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="2171:2207" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="2542:2572" ph="{&quot;@primary-color&quot;: 'pink'...}" />
+              <marker date="1516172400000" expanded="true" signature="2602:2686" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="2638:2684" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="3064:3629" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="3158:3482" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="3240:3475" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="3250:3363" ph="//..." />
+              <marker date="1516172400000" expanded="true" signature="3499:3546" ph="{...}" />
+              <marker date="1516172400000" expanded="true" signature="3576:3615" ph="{...}" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
