@@ -36,7 +36,7 @@ export default class About extends React.PureComponent<any, any> {
                 <h3>联系方式</h3>
                 <ul>
                   <li>邮箱：348267823@qq.com</li>
-                  <li>github: <a target="_blank" href="https://github/hihl">https://github/hihl</a></li>
+                  <li>github: <a target="_blank" href="https://github.com/hihl">https://github.com/hihl</a></li>
                 </ul>
               </div>
             </div>
