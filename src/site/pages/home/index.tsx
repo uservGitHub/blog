@@ -62,7 +62,7 @@ export default class HomePage extends React.PureComponent<{ pagination: any }, a
       <Layout>
         <div className="container" style={{ paddingTop: 90 }}>
           <div className="row">
-            <div className="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+            <div className="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container" style={{ zIndex: 1 }}>
               {
                 articles.map((article:any) => <Preview key={article.key} article={article}/>)
               }
